@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!-- this is for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <!-- above two is for bootstrap -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h4>
+            <a href="Home.html"><i class="fas fa-home">HOME</i></a>
+                <!-- home icon is added -->
+                <!-- usually icons are of "svg" format -->
+                <!-- advantage of "svg" is eventhough we zoom, it wont gets blurry -->
+                <!-- svg - Scalar Vector Graphics -->
+        </h4>
+    </nav>
+
+        <h4>1 - CONTINUE ON LAYOUT OTHER LAYOUTS LIKE FLEX</h4>
+            <h5>1(1) - BOOTSTRAP</h5>
+                <!-- Bootstrap was introduced by twitter -->
+                <h6>1(1)(1) - COPYING BUTTON FROM BOOTSTRAP</h6>
+                    <div>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                            <!-- added this button from bootstrap website -->
+                            <!-- it is already styled, just copying the code will print that button -->
+                    </div>
+                <h6>1(1)(2) - USING BOOTSTRAP CLASSES</h6>
+                    <div class="container"> <!-- shortcut to write div and class => "div.container" -->
+                        <!-- "container" is a bootstrap class -->
+                        <!-- this only makes the below "col" codes to print with a predefined style -->
+                        <!-- if you want to see the difference disable the "class="container" and check the results -->
+                        <div class="row">
+                            <div class="col">column</div><!-- shortcut to write div with class along with a child div and class => div.row>div.col -->
+                                <!-- bootstrap will always have 12 column layout -->
+                                <!-- the screen is divided into 12 equal halves -->
+                                <!-- "col" helps to divide the screen equally here-->
+                            <div class="col">column</div>
+                            <div class="col">column</div>
+                                <!-- in this case the 12 parts is divided among the three columns -->
+                                <!-- if the screen size resuces the column will come to the next line -->
+                        </div>
+                    </div>
+                <h6>1(1)(2) - TO DIVIDE THE 12 PARTS AMONG 2 COLUMNS MANUALLY</h6>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8">column - 8</div>    
+                            <div class="col-4">column - 4</div>
+                        </div>
+                            <!-- here the column will not come to next line when the screen size is reduce because we 
+                                have maually said how much the column should be -->
+                    </div>
+
+                <h6>1(1)(3) - TO DIVIDE THE 12 PARTS AMONG 3 COLUMNS MANUALLY</h6>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">column - 2</div>
+                            <div class="col-8">column - 8</div>    
+                            <div class="col-2">column - 2</div>
+                        </div>
+                    </div>
+                
+                <h6>1(1)(4) - WHAT IF 2 COLUMN WITH 4 PARTS EACH GIVEN MANUALLY</h6>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">column - 4</div>
+                            <div class="col-4">column - 4</div>
+                                <!-- gap will be formed at the end    -->
+                        </div>
+                    </div>
+
+                <h6>1(1)(5) - WITH THE SAME ABOVE EXAMPLE WHAT IF WE WANT GAP AT THE STARTING BUT NOT AT THE ENDING</h6>
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-4 col-4">column - 4</div>
+                                <!-- so "offset" pushes the column for 4 parts -->
+                            <div class="col-4">column - 4</div>
+                        </div>
+                    </div>
+
+                <h6>1(1)(6) - WITH THE SAME ABOVE EXAMPLE WHAT IF WE WANT GAP AT THE MIDDLE</h6>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">column - 4</div>
+                            <div class="offset-4 col-4">column - 4</div>
+                        </div>
+                    </div>
+
+                <h6>1(1)(6) - HOW TO MAKE IT RESPONSIVE</h6>
+                    <!-- codes to make it responsive is given in this website => https://getbootstrap.com/docs/5.1/layout/containers/ -->
+                    <!-- for the layout purpose we can avoid "media query" to have a responsive webpage instead we can use bootstraps
+                        inbuit codes -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col col-sm-3">column</div>
+                                    <!-- after 540px the middle one become double the size of side ones -->
+                                <div class="col col-sm-6">column</div>
+                                <div class="col col-sm-3">column</div>
+                            </div>
+                        </div>
+
+                <h6>1(1)(6) - HOW TO MAKE IT RESPONSIVE</h6>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-sm-3 col-md-8">column</div>
+                                <!-- after 576px the middle one become double the size of side ones -->
+                                <!-- after 768px another change takes place -->
+                                <!-- like this we can make it responsive for multiple screen size -->
+                            <div class="col col-sm-6 col-md-2">column</div>
+                            <div class="col col-sm-3 col-md-2">column</div>
+                        </div>
+                    </div>
+</body>
+</html>

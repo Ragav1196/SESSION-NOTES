@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="part 2.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2 - HOW JS ACCESSING THE HTML FILES -->
+        <!-- DOM tree is built when browser try to open a HTML page -->
+        <!-- that DOM tree is being accessed by JS files -->
+        <!-- using the "Document" keyword we can access the elements in HTML through JS -->
+        <!-- the "document" is able to access the DOM tree through which we are able to access 
+            the HTML page -->
+    
+            <!-- 2(1) - TO SELECT USING THE TAG NAME -->
+
+                <h1>Welcome All!!!</h1>
+                <h1>Nice</h1>
+                    <!-- to access these through JS we can use "document" -->
+
+            <!-- 2(2) - TO SELECT USING THE CLASS NAME -->
+                <p class="main">THIS IS AWESOME</p>
+                <div class="main">THIS IS MARVELLOUS</div>
+            
+            <!-- 2(3) - TO SELECT USING THE ID NAME -->
+                <p id="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum, 
+                    incidunt unde, nemo possimus deserunt veritatis repudiandae non similique adipisci 
+                    quia eos officia quas quam vitae, explicabo fuga quo. Totam!</p>
+            
+            <!-- 2(6) - TO CREATE A NEW ELEMENT -->
+                <!-- 2(6)(2) - TO ADD TO OTHER THAN BODY -->
+                    <div class="new_element_div"></div>
+
+            <!-- 2(7) - HOW TO ADD ATTRIBUTES -->
+                <input type="text" class="add_attributes_input">
+
+            <!-- 2(8) - TO ADD LIST ITEMS THROUGH JS -->
+                <h1>My fAV THINGS</h1>
+                <ul class="add_list_ul">
+
+                </ul>
+
+            <!-- 2(9) - USING TEMPLATE LITERAL TO EASILY ADD ELEMENT TO HTML -->
+                <div class="new_element"></div>
+
+
+
+<script src="part 2.js"></script>
+    <!-- we need to put script file at the end of body -->
+    <!-- if we put the script file at the head tag and try to select a element we will get 
+        error  -->
+    <!-- because js file get executed before the body of HTML is loaded(DOM tree woundnt have been made by 
+        that time) and there wont be any tag to select if the body is not loaded -->
+</body>
+</html>

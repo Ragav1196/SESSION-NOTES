@@ -1,0 +1,25 @@
+TO MAKE MONGO DB ONLINE
+    ATLAS
+    go to https://www.mongodb.com/cloud/atlas/register
+    sign up with google
+    select the preferred language as javascript
+    select mumbai as region (to keep the server near by avoiding lag) => select create cluster
+    go to left sideBar => select database access => click add new database user
+    enter username and password => ragavendiran and welcome123   
+    then select atlas admin from the drop down menu => select add user
+    now go to left side bar and select network access => click on add ip address    
+    then click allow access from anywhere to give access to open from anywhere not to particular ip address => select confirm
+    now select databases in the sidebar
+
+    now we are going to connect our node JS to this database
+    select connect => connect your application
+    copy the connection code
+    "const MONGO_URL = "mongodb://localhost";" => paste that code in this MONGO_URL replacing the existing link
+    "mongodb+srv://ragavendiran:<password>@cluster0.vcsp8.mongodb.net" (only upto this part copy there)  /myFirstDatabase?retryWrites=true&w=majority (leave this part)
+    replace the <password> with my password
+    select browse collection
+    !CONT. TO INDEX.JS
+
+    CONNECTING NODE JS WITH MONGO DB LOCAL
+    CONNECTING NODE JS WITH MONGO DB ONLINE (ATLAS)
+

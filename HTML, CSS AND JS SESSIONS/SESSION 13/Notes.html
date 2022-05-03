@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Notes.css">
+    <title>Document</title>
+</head>
+<body>
+    <h4>1 - CREATING TABLE:-</h4>
+        <table class="table">
+            <thead><!--"Table Head" - used to headings of the table inside Table Head -->
+                <tr><!--"Table Row" - a row will be created-->
+                    <th colspan="2">Full Name</th><!--"th" is used to input data in columnwise inside "thead"-->
+                                                  <!--"colspan" is used to extend the column upto the specified column-->
+                    <th rowspan="2">Gender</th><!--"rowspan" is used to extend the row upto the specified row-->
+                </tr>
+                <tr>
+                    <th>First Name</th><!--Prints in bold to represent heading of the table-->
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+
+            <tbody><!--"Table Body" - body of the table is written here-->
+                <tr>
+                    <td>Ragav</td><!--"Table Data" is used to input data in columwise inside "tbody"-->
+                    <td>Ragavendiran</td>
+                    <td rowspan="3">Male</td>
+                </tr>
+                <tr>
+                    <td>Karthick</td>
+                    <td>Soap</td>
+                </tr>
+                <tr>
+                    <td>Vignesh</td>
+                    <td>Parama</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <h4>2 - ALIGNING ELEMENTS IN ORDER USING TABLES:-</h4>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td><input type="text" placeholder="YOUR NAME"></td>
+                    <td><input type="text" placeholder="YOUR AGE"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="MARITAL STATUS"></td>
+                    <td><input type="text" placeholder="COLLEGE"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="table_button">SUBMIT</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- this method of using table to align texts were in usage before but 
+             nowadays these methods are not in use instead new methods were came -->
+
+    <h4>3 - FORM ELEMENTS</h4>
+        <h5>3(1) - TO CREATE LABLE FOR INPUT:-</h5>
+            <label for="fname">First Name</label><!--"label" is used to give a heading for a input-->
+                <!-- "for" is used too connect both the label and the input field so that clicking the label will point the 
+                    cursor to the input field -->
+            <input type="text" name="fname" id="fname" placeholder="YOUR FIRST NAME">
+                <!-- "id" is given so that the "for" can use "id" and connect the input and label -->
+                <!-- "id" should'nt be repeated -->
+                <!-- "name" is used in javascript -->
+                <!-- "name" can be same for other elements also -->
+                
+            <label for="">Last Name</label>
+            <input type="text" name="" id="" placeholder="YOUR LAST NAME">
+                
+        <h5>3(2) - TO CREATE RADIO BUTTON:-</h5>
+            <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" checked><label for="female">Female</label>
+                <!-- by giving same "name" HTML undersdtands they both are connected and only one of the radio can be selected -->
+                <!-- "value" is the one whose value is stored in the database -->
+                <!-- "checked" is used to select a option as default whenever the page loads -->
+
+        <h5>3(3) - TO CREATE CHECKBOX:-</h5>
+            <p>SELECT YOUR HOBBIES</p>
+            <input type="checkbox" name="hobbies" id="riding" value="riding" checked> <label for="riding">Riding</label>
+            <input type="checkbox" name="hobbies" id="cooking" value="cooking" disabled> <label for="cooking">Cooking</label>
+                    <!-- "disabled" can be used to disbale a option -->
+            <input type="checkbox" name="hobbies" id="swimming" value="swimming"> <label for="swimming">Swimming</label>
+            <input type="checkbox" name="hobbies" id="binging" value="binging"> <label for="binging">Binging</label>
+
+        <h5>3(4) - TO CREATE DROPDOWN</h5>
+            <div>
+                <!--"div" is a block level element so tags inside will be printed in next line-->
+                <label for="States">Select your state:</label>
+                <select name="" id="States" multiple>
+                    <!-- "multiple" is used to select multiple options -->
+                    <option value="" disabled>---- please choose ----</option>
+                    <!--this act like a "place holder" we dont give value here so that no value will be sent to the 
+                        server if this option is in selected-->
+                    <option value="TN">TAMIL NADU</option>
+                    <option value="KL">KERAL</option>
+                    <option value="MH" selected>MAHARAHTRA</option>
+                    <!--"selected" is same like "checked" it will select that particular item as default option-->
+                    <option value="DL">DELHI</option>
+                </select>
+            </div>
+
+        <h5>3(5) - TO CREATE TEXT AREA</h5>    
+            <div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tweet away"></textarea>
+                <!-- "textarea" used to create bigger input box -->
+                <!-- "cols" to change the width -->
+                <!-- "rows" to change the height -->
+            </div>
+        
+        <!-- 3(6) - FIELDSET => REFER BOTTOM OF THE PAGE -->
+
+    <h4>4 - FORM VALIDATIONS</h4>
+        <h5>4(1) - TO MAKE A INPUT COMPULSORY TO FILL</h5>
+            <form action="">
+                <!-- to create a form "form" tag is used -->
+
+                <label for="">First Name</label>
+                <input type="text" name="" id="" minlength="3" maxlength="10" required> <br> <br>
+                    <!-- "required" is used to make a input field compulsory to fill -->
+                    <!-- "minlength" makes it compulsory to have minimum of input field 
+                        should have 3 letters or more -->
+                    <!-- "maxlength" doesnt allow to write more than the set value -->
+
+                <label for="">Age</label>
+                <input type="number" name="" id="" min="0" max="100">
+                    <!-- "min" and "max" will set a limit for the number to be filled -->
+
+                <button type="submit">SUBMIT</button>
+                    <!-- to create a submit button -->
+            </form>
+
+    <h4>5 - TO STYLE USING THE VALUE IN ID</h4>
+        <label for="" class="first_name_class" id="first_name_id">First Name</label>
+        <input type="text" name="" id="fname" minlength="3" maxlength="10" required> <br> <br>
+
+    <h4>6 - SPECIFICITY - PRIORITY OF SELECTORS</h4>
+        <h5>6(4) - INLINE</h5>
+            <label for="" style="color: orangered;" class="" id="first_name_id">First Name</label>
+                <!-- inline is given more priority than id or class or tags -->
+                <!-- but it is bad practice to style using inline or "id" as nothing can overwrite these -->
+
+    <h4>7 - COLOR GRADIENT</h4>
+        <div for="" class="gradient" id="gradient">
+         
+        </div>
+
+    <h5>3(6) - FIELDSET</h5>
+        <fieldset>
+            <legend>Select your state:</legend>
+                <!--instead of "label" "legend" is used here-->
+            <select name="" id="States">
+                <option value="" disabled>---- please choose ----</option>
+                <!--this act like a "place holder" we dont give value here so that no value will be sent to the 
+                    server if this option is in selected-->
+                <option value="TN">TAMIL NADU</option>
+                <option value="KL">KERAL</option>
+                <option value="MH" selected>MAHARAHTRA</option>
+                <!--"selected" is same like "checked" it will select that particular item as default option-->
+                <option value="DL">DELHI</option>
+        </fieldset>
+</body>
+</html>

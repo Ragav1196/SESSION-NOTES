@@ -1,0 +1,59 @@
+/* DIFFERENT FORMAT OF COLOR:- */
+    /* RGBA - Red Green Blue Alpha */
+        /* ALPHA - used to change the transperency of the element */
+    /* HSLA - Hue Saturation Lightness Alpha */
+    /* HEX - we give value */
+    /* Color name - we give color name directly */ 
+    .NAME {
+        color: pink;
+        background-color: beige;
+    }
+
+/* TO EDIT A IMAGE */
+    .IMAGE {
+        height: 400px;
+            /* To change height of the image */
+            /* when height is given without width then the image gets align automaticaly with appropriate width according to the spcified height */
+        width: 400px;
+            /* To change width of the image */
+            /* when both width and height are given then the image gets shrink to the given height snd width  */
+        /* object-fit: cover; */
+            /* if we want the image to fit to the specified width and height also want to avoid the shrinkage of image then "object fit" property used with value as cover */
+            /*which will Zoom in the image and give the image without any shrinkage*/ 
+        object-fit: contain;
+            /* this will print the image in small size within the specified height and width but not more than the specified range */
+        object-position: left;
+            /* this will position the image to the specified side */
+        display: block;
+            /* this will force the inline element to become a block element and it wont share the space with anyother element  */
+}
+
+/* TO EDIT A CERTAIN LINE OR WORDS OF A PARAGRAPH SEPERATELY:- */
+    .PARA {
+        color: crimson;
+        text-transform: uppercase;
+        height: 1000px;
+        width: 1000px;
+            /* as said height and width will not change for inline element */
+    }
+
+/* TO PUT TWO ELEMENT INSIDE A SAME CONTAINER:-  */
+    /* DIV: */
+        .fname {
+            background-color: burlywood;
+        }
+
+        .lname {
+            background-color: burlywood;
+        }
+            /* here backgroud color will be seperated as they both are different elements */
+        
+        .full_name {
+            background-color: darkgoldenrod;
+        }
+            /* to make the background color to filled without any gap "div" is used which will put both the element inside a same container */
+
+
+.last_para {
+    width: 50%;
+}

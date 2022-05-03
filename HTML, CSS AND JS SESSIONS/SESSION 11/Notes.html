@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <!-- This is given to tell the browser that this is a HTML file. -->
+    <!-- we used to give this in older version of HTML -->
+    <!-- but nowadays it is not necessary as browser can understand that it is HTML file without this also. -->
+<html lang="en">
+    <!-- This tag is called as root tag; bcoz from this only everything starts; -->
+    
+<head>
+    <meta charset="UTF-8">
+        <!-- If a tag doesnt have a closing tag then it is called as self closing tag. -->
+        <!-- meta is the one that showing the thumbnail of the youtube video when shared(example when shared in whatsapp) -->
+        <!-- UTF-8 is used to tell the browser to allow all kind of emoji's and other language characters. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Contents that we are seeing in the browser screen when an website is opened is called viewport. -->
+        <!-- viewport meta tag is used to make the viewport of the webpage to align with the width of the viewport-->
+        <!-- so that the webpages can be looking good while using in the mobile browsers also -->
+        <!-- "initial-scale=1.0" is used to solve the problem of zooming when the screen is rotated from vertical to landscape mode. -->
+    
+    <!-- TO CHANGE THE FONT:- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+        <!-- The above three link are copied from "https://fonts.google.com/" to change the font -->
+        <!-- so whatever font we need we can just copy that link and paste it here and we can add this font property to the element that we need -->
+
+    <link rel="stylesheet" href="Notes.css">
+    <!-- To link the CSS and JS file to HTML -->
+
+    <title>NOTES</title>
+        <!-- used to change the title of the page which will be visible as name on the tabs -->
+    
+    
+</head>
+<body>
+    <!-- This is the content of the webpage -->
+    <!-- whatever inside the body that alone we will be seeing in the viewport of a webpage -->
+
+    <!-- BASIC HTML TAGS:- -->
+        <!-- HEADER TAGS:- -->
+        <H1>RAGAVENDIRAN</H1>
+            <!-- "H1" is bigger one and goes on until "H6". "H6" is smaller one -->
+            <!-- "H" tags used to write heading for each para -->
+        <H2>RAGAVENDIRAN</H3>
+        <H3>RAGAVENDIRAN</H4>
+        <H4>RAGAVENDIRAN</H5>
+        <H5>RAGAVENDIRAN</H6>
+        <H6>RAGAVENDIRAN</H6>
+            <!-- If there is no tags or any tags given that the HTML cant understand then html just prints the text typed -->
+
+        <!-- TO TAKE INPUT FROM USER:- -->
+            
+            <!-- FOR TEXT INPUT: -->
+            <input type="text" placeholder="ENTER YOUR NAME"/>
+                <!-- "text" can take any kind of input from user  -->
+                <!-- "type" represents what type of input needed to be taken in this case it takes only "text" as input -->
+                <!-- "placeholder" is used to have a default input which will go away once started typings -->
+                <!-- things used inside the input above is known as "attributes" -->
+            
+            <!-- FOR NUMBER INPUT: -->
+            <input type="number" placeholder="ENTER YOUR MOBILE NUMBER"/>
+                <!-- in this example it takes only numbers -->
+            
+            <!-- FOR PASSWORD INPUT: -->
+            <input type="password" placeholder="ENTER YOUR PASSWORD"/>
+                <!-- to input a password which doesnt show the input entered by the user to the user -->
+
+        <!-- LIST:- -->
+            <!-- UNORDERED LIST: -->
+            <h3 class = "fav_things">unordered list</h3>
+                <!-- "class" is used to specify a seperate name for a element and that name  -->
+                    <!-- can be used to edit that element in the CSS. -->
+            <ul>
+                <!-- gives the items list with bullets -->
+                <li>Briyani</li>
+                    <!-- "<li>" tag is used to list the items. -->
+                <li>Gaming</li>
+                <li>Sports</li>
+                <li>Travel</li>
+                <li>Music</li>
+            </ul>
+
+            <!-- ORDERED LIST: -->
+            <h3 class = "fav_things">ordered list</h3>
+            <ol>
+                <!-- gives items list with number -->
+                <li>Briyani</li>
+                <li>Gaming</li>
+                <li>Sports</li>
+                <li>Travel</li>
+                <li>Music</li>
+            </ol>
+
+        <!-- TO WRITE A PARAGRAPH:- -->
+        <p>hai.... <br>
+                <!-- <br> is used to give a break in the line -->
+           how are you doing <br>
+           where are you right now <br>
+           how is the weather out there <br>
+        </p>
+    
+</body>
+</html>

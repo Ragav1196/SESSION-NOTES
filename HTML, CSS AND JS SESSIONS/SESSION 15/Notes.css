@@ -1,0 +1,302 @@
+/* 1 - LAYOUT */
+    .layout > div{
+        height: 15rem;
+        width: 10rem;
+        /* margin: 1rem; */
+        background-color: teal;
+    }
+
+    .layout > div:nth-child(2){
+        background-color: palevioletred;
+    }
+
+    .layout > div:nth-child(3){
+        background-color: orange;
+    }
+
+    .layout > div:nth-child(4){
+        background-color: chocolate;
+    }
+    /* as div are block level element they stack upon eachbother */
+
+    .layout > div{
+        display:inline-block;
+    }
+        /* this is normal method to make it printed horizontally */
+
+/* 2 - FLEX */
+    /* this new property which also make it printed like horizontally but it shouldnt be applied on the "div" instead 
+        they are applied on the parent container in this case it is "section" */
+
+        /* 2(1) - code 1 */
+            
+            .layout{
+                display: flex;
+                gap: 1rem;
+                    /* creates gap between the elements */
+            }
+                /* this flex property doesnt care about the width that we have mentioned. it only takes the width full width
+                    when there is enough space*/
+                /* if the screen is shrinked it reduce the width and maintain the elements horizontally */
+                /* flex imporatant role is to keep elements side by side */
+            
+            body{
+                margin: 0px;
+            }
+
+            /* there are more options available in inspect element to edit */
+            /* go to => inspect elements => click felx(small icon nearby the element) => inside style tab => click flexbox editor  */
+
+                /* 2(1) options available in flexbox editor. */
+                    /* 2(1)(1) - flex-wrap */
+                        /* there are two options */
+                            /* no wrap */
+                            /* wrap */
+                        /* usually it is no wrap as default which will not put the elemnts to the next line when the page is
+                            shrinked instead it reduces the elemnts width */
+
+                        /* if wrap is used then it pushes the element down when the page is shrinked */
+
+                    /* 2(1)(2) - align items */
+                        /* this is used to align elements vertically */
+
+                    /* 2(1)(3) - justify_content */
+                        /* this is used to align elements horizontally */
+
+                    /* 2(1)(4) - flex-direction */
+                        /* options */
+                            /* row */
+                            /* column */
+                        /* row align them horizontally */
+                        /* column align them vertically */
+    /* 2(2) - code 2 */
+        .code_2_layout > div{
+            width: 10rem;
+            background-color: teal;
+        }
+
+        .code_2_layout > div:nth-child(2){
+            background-color: palevioletred;
+        }
+    
+        .code_2_layout > div:nth-child(3){
+            background-color: orange;
+        }
+    
+        .code_2_layout > div:nth-child(4){
+            background-color: chocolate;
+        }
+
+        .code_2_layout{
+            display: flex;
+            gap: 1rem;
+        }
+        
+        /* flex will only works for child element so after that all the element will inherit the properties of the div only */
+
+/* 3 - POSITION PROPERTY */
+    /* 3(1) - RELATIVE */
+        .position_property_relative > div{
+            height: 5rem;
+            width: 10rem;
+            /* margin: 1rem; */
+            background-color: teal;
+        }
+
+        .position_property_relative > div:nth-child(2){
+            background-color: palevioletred;
+        }
+
+        .position_property_relative > div:nth-child(3){
+            position: relative;
+                /* default position for every element is static */
+                /* position helps to move elements */
+                /* relative overlaps elements over other elements */
+                /* even though the element is moved the original place of this element cannot be occupied by other 
+                    element. it will be empty */
+            left: 40px;
+                /* we can move it horizontally */
+            top: 40px;
+                /* we can move it vertically */
+            background-color: orange;
+        }
+
+        .position_property_relative > div:nth-child(4){
+            background-color: chocolate;
+        }
+
+    /* 3(2) - ABSOLUTE */
+        .position_property_absolute{
+            position: relative;
+                /* when "top" property is assigned to a absolute element with value as "0"  */
+                    /* if there is any relative element present on top nearby to the absolute then that absolute element
+                        goes and sit on the relative element  */
+                    /* if there is no relative element present nearby on top of a absolute element then the absolute element
+                        goes to the top of "body" */
+        }
+        .position_property_absolute > div{
+            height: 5rem;
+            width: 10rem;
+            /* margin: 1rem; */
+            background-color: teal;
+        }
+
+        .position_property_absolute > div:nth-child(2){
+            background-color: palevioletred;
+            position:absolute;
+                /* "absolute" value will seperate that element from other elements */
+                /* in "relative" even though the element moves from its place, its place is not occupied by other element */
+                /* but in the case of "absolute" the other elements occupy its place and it overlaps on the other element */
+            left: 50px;
+            top: 0px;
+               /* refer ".position_property_absolute" style on top */
+               /* when for "top" value is given it starts to move from that place either from top of body (if no relative 
+               element neraby on the top) or from the nearby relative element(if nearby relative element present 
+               on top) */
+               /* to make this element to be on top of the ".position_property_absolute" , erase comment on 
+                ".position_property_absolute" */
+        }
+
+        .position_property_absolute > div:nth-child(3){
+            background-color: orange;
+        }
+
+        .position_property_absolute > div:nth-child(4){
+            background-color: chocolate;
+        }
+
+
+/* 4 - TO MAKE ELEMENT FLOAT */
+.nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+        /* copied from inspect elements (flexbox editior) */
+    background-color: beige;
+    padding: 20px;
+
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    z-index: 10;
+        /* while scrolling the float elemnt in (5) will be hide this one. to avoid that we can use ""Z index */
+        /* whichever element has higher "z index" that element will be coming on the top */
+}
+
+/* 5 - Z INDEX */
+    .z_index{
+        position: relative;
+        /* z-index: 100; */
+            /* if this is enabled then this "z_index" will be on the top */
+            
+    }
+    .z_index > div{
+        height: 5rem;
+        width: 10rem;
+        /* margin: 1rem; */
+        background-color: teal;
+    }
+
+    .z_index > div:nth-child(2){
+        background-color: palevioletred;
+        position:absolute;
+        left: 50px;
+        /* top: 0px; */
+    }
+
+    .z_index > div:nth-child(3){
+        background-color: orange;
+    }
+
+    .z_index > div:nth-child(4){
+        background-color: chocolate;
+    }
+       
+   
+/* 6 - TO ALWAYS KEEP THE FLOAT ON TOP */
+    .to_keep_on_top_image{
+        height: 500px;
+        width: 50%;
+        background: url(https://media.istockphoto.com/photos/candy-skies-picture-id511675552) rgb(255 142 10) /* no-repeat */;
+            /* "no-repeat" eliminates repeating of image */
+        object-fit: cover;
+    }
+
+    .to_keep_on_top_nav_child{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        background-color: beige;
+        padding: 20px;
+        margin: 0px;
+
+    }
+
+    .to_keep_on_top_nav{
+        position:fixed;
+            /* this keeps on top of the page from the start itself */
+        /* position: sticky; */
+            /* this keeps the float on top only after the page croses this element until it will be on its position  */
+            /* it will be initially static once it page crosses this element it becomes sticky */
+            /* enable this to see the result but disable "position:fixed" */
+            
+        top: 0px;
+            /* by giving "top" only we can always keep the float on top */
+        /* top: 10px; */
+            /* to have a "10px" of gap on the top */
+                /* to see the result enable this and disable other "top" */
+        width: 100%;
+        margin: 0px;
+    }
+        /* it is given on ".to_keep_on_top_nav_child" as it is child of body and we want the element to stick 
+            to the body top */
+
+/* 7 - CHANGING DESIGN ACCORDING TO SCREEN SIZE */
+    /* MEDIA QUERIES */
+        .design_changing_section > div{
+            height: 10rem; 
+            width: 100%;
+            font-weight: bold;
+            font-size: 10rem;
+            text-align: center;
+            background-color: teal;
+        }
+
+        .design_changing_section > div:nth-child(2){
+            background-color: palevioletred;
+        }
+    
+        /* TO EDIT THE SIZE OF "DIV" ACCORDING TO SCREEN SIZE */
+            /* 1st breakpoint after 600px */
+                @media (min-width: 300px){
+                    /* this above statement is called as "breakpoint" */
+                    /* upto 800px there wont be any changes. but after 800 px these style effects will be applied */
+                    .design_changing_section{
+                        display: flex;
+                    }
+                    .design_changing_section > div:nth-child(2){
+                        background-color: orange;
+                    }
+                }
+        /* WE CAN HAVE MULTIPLE BREAKPOINTS */
+            /* 2nd breakpoint */
+                @media (min-width: 500px){
+                    .design_changing_section > div:nth-child(1){
+                        background-color: crimson;
+                    }
+
+                    .design_changing_section > :nth-child(2){
+                        background-color: orange;
+                    } 
+                }
+            /* 3rd breakpoint */
+                @media (min-width: 800px){
+                    .design_changing_section{
+                        flex-direction: row-reverse;
+                    }
+                }
+
+        
+
+
+

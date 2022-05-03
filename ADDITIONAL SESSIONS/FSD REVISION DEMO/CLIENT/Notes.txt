@@ -1,0 +1,16 @@
+2 -> CLASS COMPONENT:
+    Incase of class component render function is must.
+
+    2(1) -> CLASS COMPONENT WORKING EXPLAINED:
+    2(2) -> CREATING STATES USING CONSTRUCTOR:
+    2(3) -> LIFECYCLE METHOD:
+        CLASS VS FUNCTIONAL COMPONENT:            
+            "componenrntDidUpdate" is equal to useEffect without dependency array
+            "componenrntDidMount" is equal to useEffect with dependecy array
+            "componenrntWillUnmount" is equal to useEffect with return function
+    2(4) -> ORDER OF EXECUTION:
+        1 -> constructor will be called
+        2 -> render will be called
+        3 -> After rendering "componenrntDidMount" function will be called
+        4 -> on state change "componentdidUpdate" will be called
+        5 -> on component removal "componentWillUnmount" will be called

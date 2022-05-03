@@ -1,0 +1,106 @@
+    h1 {
+        color: red;
+        font-size: 64px;
+            /* To change the font size */
+        text-transform:lowercase;
+            /* To change the case of the input */
+        letter-spacing: 20px;
+            /* To give space between each letter */
+    }
+        /* texts above is overall called - css rule */
+        /* element before the starting curly bracket is called the CSS selector */
+        /* between and including curly bracket {} - css declaration block */
+        /* color - property */
+        /* red value */
+
+    ul {
+        color : green;
+            /* changes the color */
+        list-style-type:georgian;
+            /* changes the bullet style */
+        background-color: lightgray;
+             /* Changes the color of the content and the padding space */
+        font-family: 'Fleur De Leah', cursive;
+            /* refer HTML page "TO CHANGE THE FONT" */
+            /* This property we can copy from the google fonts and add it here */
+            /* this will change that particular element font */
+            /* "fleur de leah" is the font name but the need to add another font "cursive" along with is because that for some reason if the 
+                google font is not loading then the cursive font will come into action */
+        font-size: 50px;
+    }
+
+    ol {
+        color: pink;
+        list-style-type:georgian;
+    }
+
+/* types of selecting elements individually to format with styles */
+    /* class selector */
+    /* many other ways also */
+
+    /* CLASS SELECTOR: */
+        .fav_things {
+            /* refer, HTML page "unordered list > class" */
+            /* the class name that is created in the HTML can be specified here to edit that */
+                /* specific element alone  */
+            /* in this case it will not edit all the elements with "H3" but only the elements */
+                /* with this class name */
+            color:darkblue;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+        }
+
+/* To create a border:- */
+    p{
+        color: lightsalmon;
+        
+        /* BORDER:- */
+        border: 5px solid antiquewhite;
+            /* "Border" is used to create border */
+            /* "border width, border style, border color" can be given as value inside the "border" property in one line */
+        
+        /* border-width: 5px;
+        border-style: groove;
+        border-color: blue; */
+            /* like this we can give value to each property seperately also */
+        
+        /* border-top-color: chartreuse; */
+            /* like this we can edit the border sides individually also */
+        
+        padding: 20px;
+            /* It creates space between content and the border */
+
+        /* To view more clearly on the other options of editing and see their result on the go then  we can do that in the "styles tab"  */
+    }
+
+/* BOX MODEL OF CSS */
+    /* This box we can find in
+        "Inspect elements > styles" */
+    /* under the styles, bottom of the page we can find this  */
+    /* for each add every element that we select, will have this box model */
+    /* in this box model we can edit the size of content to display, size of padding, size of border, size of margin */
+    /* whatever we edit in the box model or style tab it is just for referene we cannot make that change permanent. */
+    /* we just have to check the result editing out there and make copy of that changes and paste it in the CSS file then only it will get saved
+        or else once we refresh the webpage it will go away */
+
+    /* MARGIN: */
+        /* Margin is a empty space around each element which can be edited to push other elements away from it or we can say create more gap between elements */
+
+    p {
+        margin: 100px;
+            /* this will change the margin size */
+        
+        margin-top: 50px;
+            /* Or else we can just edit the margin sides individually also */
+
+        font-weight: bold;
+            /* changes to bold */
+    }
+
+/* USER AGENT STYLE SHEET:- */
+    /* This is a browser default style where the values for some property of the elements is saved before hand
+        for example : 
+                    Marging - the margin value is already determined. we can also change that values later for our use */
+    
+    
+            

@@ -1,0 +1,19 @@
+.call_back_hell{
+    height: 600px;
+    width: 600px;
+    background-color: rgb(200, 111, 28);
+    margin: 0px auto;
+    position: relative;
+    border-radius: 20%;
+}
+
+.countdown{
+    margin: 0px;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}

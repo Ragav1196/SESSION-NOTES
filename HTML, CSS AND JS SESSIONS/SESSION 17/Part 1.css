@@ -1,0 +1,63 @@
+/* FLAGS CREATED USING GRID METHOD */
+.flag{
+    height: 150px;
+    width: 100%;
+}
+
+.flag_container{
+    background-color: white;
+    /* max-width: 250px; */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: wheat;
+}
+
+.details{
+    padding: 10px;
+}
+
+section{
+    display: grid;
+        /* Alternative for bootstrap to split the columns */
+        /* grid-template-columns: 1fr 1r; */
+            /* fr is a fraction units */
+            /* number before "fr" is to say that in what ratio the column has to divided */
+            /* in the above the rario is 1:1 so the image get split into two equal columns: ; */
+        /* grid-template-columns: 1fr 2fr; */
+            /* in this case as we have given the 2nd column should be 2 times the first */
+            /* the ration become 1:2 */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+            /* here the ration will be 1:1:1 */
+            /* in the grid we dont have limitation like we have iin bootstrap to create only 12 cloumns */
+            /* here we can make more than that also */
+        /* grid-template-columns: repeat(4, 1fr); */
+            /* repeat is a short cut to say "1fr fr 1fr 1fr" */
+        grid-template-columns: 1fr;
+        gap: 40px;
+            /* this will create gap both column and row wise */
+        /* row-gap: 10px; */
+            /* to get gap only row wise */
+        /* column-gap: ; */
+            /* to get gap only column wise */
+}
+
+@media (min-width: 546px) {
+    section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 938px) {
+    section{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+body{
+    display: grid;
+    place-content: center;
+        /* this will keep the content at center of the page */
+    height: 100vh;
+        /* this has to give then only the content will be place center both verically and horizontally */
+}

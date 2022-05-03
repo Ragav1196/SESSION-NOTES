@@ -1,0 +1,21 @@
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+
+1 -> DRIVERS VS ORM:
+    DRIVERS:
+        Drivers helps to connect the node js to the database 
+        Eg: mongodb package
+
+    ORM:
+        ORM is Object Relationship Mapping, which is also used to connect node js to the 
+        database but it is an advanced version of the normal driver like mongodb package. 
+        here it has some extra functions to make job easier like "find by id"
+
+        ORM internally uses driver to connect the node js and database
+
+2 -> DESTRUCTURING AND ASSIGNING TO A NEW VARIABLE:
+3 -> FIND ONE AND UPDATE METHOD
+4 -> SPREAD OPERATOR
+    4(1) -> SPREAD OPERATOR USE IN AN OBJECT
+
+STOPPED AT 45 mins

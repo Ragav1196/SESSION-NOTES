@@ -1,0 +1,31 @@
+TO DELETE ONE MOVIE:
+
+TO GIVE A ERROR MESSAGE WHEN THERE IS NO MOVIE:
+
+TO UPDATE ONE MOVIE:
+
+TO MAKE ABOVE NORMAL CODE INTO A FUNCTION:
+
+TO SHOW THE UPDATED MOVIE IN THE POSTMAN RESULT SECTION: 
+
+TO HIDE THE URL OF MONGO DB ATLAS:
+    create a .env file
+    enter the name of the variable where the url is stored
+    followed by the "=" and the "url"
+    eg:- variable name = url
+    there shouldn't be any space or semicolon
+    to not allow the git to track the created file we are going to mention the name of the file in the ".gitignore" file
+    to use the created file in our main file we are going to use a package called .ENV
+    to install it type "npm i dotenv" in the terminal
+    then import the "dotenv" by typing this code in the main page "import dotenv from "dotenv";
+    then call the method "dotenv.config()"
+    this method will put the data we store in the .env file as key value pair key in the process.env variable 
+    there will be lot of thing and our data will also be there as an key value pair
+    now to take out the url and store it in a variable
+    type in your main file "const MONGO_URL = process.env.MONGO_URL"
+    so our url and password in it will be safe when we commit it to the github
+    !CONT. TO THE "index.js"
+     
+    
+
+

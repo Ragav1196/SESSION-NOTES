@@ -1,0 +1,17 @@
+.flag{
+    height: 180px;
+    width: 100%;
+}
+
+.flag_container{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: wheat;
+    margin: 20px 0px;
+        /* first is for top and bottom */
+        /* second is for left and right */
+}
+
+.details{
+    padding: 10px;
+}

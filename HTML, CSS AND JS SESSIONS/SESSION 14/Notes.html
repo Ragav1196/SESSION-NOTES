@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Notes.css">
+    <title>Document</title>
+</head>
+<body>
+    <h4>1 - MULTIPLE CLASS</h4>
+        <P>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India. Bloomberg had reported earlier 
+           that salt-to-software conglomerate would re-acquire the national carrier more than half a century after ceding control to the 
+           government. "Media reports indicating approval of financial bids by Government of India in the AI disinvestment case are incorrect," 
+           the finance ministry said on Friday, adding the media will be informed of any decision "as and when it is taken."</P>
+
+        <P class="multiple_class main_class_name">The government has denied media reports that Tata Group has won the bid for the debt-laden Air India. Bloomberg had reported earlier 
+            that salt-to-software conglomerate would re-acquire the national carrier more than half a century after ceding control to the 
+            government. "Media reports indicating approval of financial bids by Government of India in the AI disinvestment case are incorrect," 
+            the finance ministry said on Friday, adding the media will be informed of any decision "as and when it is taken."</P>
+                <!-- We can give two or more class seperated by a space to the same element so that it take property style value
+                    of the second property also(main_class_name) -->
+
+        <H2 class="main_class_name">RAGAVENDIRAN</H2>
+
+    <h4>2 - CSS COMBINATORS</h4>
+        <h5> code - 1</h5>
+            <div class="combinator_div">
+                <!-- when style is given to "div" it inherit that to all the elements inside it.  -->
+                <!-- basically here "div" is parent container -->
+                <!-- "p" is its child  -->
+                <!-- so properties of "div" is assigned to its child "p" also -->
+                <!-- it is same for child, grand child and so on -->
+                <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                <h1>RAGAVENDIRAN</h1>
+            </div>
+
+        <h5>code - 2</h5>
+            <!-- how to select all desendent of the "div" -->
+                <div class="combinator_div">
+                    <article>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptates? Maxime atque esse vel quo 
+                            quos nam omnis qui, corporis amet voluptatibus voluptates quibusdam quisquam neque repellendus sunt, dolore 
+                            porro.</p>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptates? Maxime atque esse vel quo 
+                            quos nam omnis qui, corporis amet voluptatibus voluptates quibusdam quisquam neque repellendus sunt, dolore 
+                            porro.</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptates? Maxime atque esse vel quo 
+                            quos nam omnis qui, corporis amet voluptatibus voluptates quibusdam quisquam neque repellendus sunt, dolore 
+                            porro.</p>
+                    </article>
+                </div>
+                    <!-- in this case the "p" is not selected because that it is not child of "div" it is grand child of 
+                        "div". as we have mentioned only child, it is not applied to grand child -->
+
+        <h5>code - 3</h5>
+            <!-- to select the next line of "p" who has a class to it -->
+            <!-- here the next "p" is called as sibling of the "p" with class -->
+                <div class="combinator_div">
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p class="third_line">The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <h1>RAGAVENDIRAN</h1>
+                </div>
+
+    <h4>3 - PSEUDO SELECTORS</h4>
+        <h5>3(1) - HOVER</h5>
+            <div class="Pseudo_div_hover">
+
+            </div>
+            
+            <h6>HOVER USING IMAGES</h6>    
+                <div class="Pseudo_div_images">
+
+                </div>
+
+        <h5>3(2) - nTH-CHILD</h5>
+                <div class="pseudo_div_nth">
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                    <p>The government has denied media reports that Tata Group has won the bid for the debt-laden Air India.</p>
+                </div>
+
+    <h4>4 - A TAG</h4>            
+        <a href="https://www.google.com/">GOOGLE</a> <br>
+            <!-- a link to "google" will be created using "a" tag or called "anchor" tag -->
+
+        <a href="https://www.google.com/" target="_blank">GOOGLE in new tab</a>
+                <!-- "target ="_blank"" opens the website in new tab -->
+
+        <h5>4(1) - TO CREATE A LINK TO ANOTHER PAGE</h5>
+        <nav>
+            <!-- nav means navigation. it is a symantic element like (thead, tbody, div, section). symantic elemnts are 
+                like format to follow where we use tags related to that specific content -->
+                <ul>
+                    <li>Home</li>
+                    <li><a href="about.html" class="link_to_other_page_a">About</a></li>
+                        <!-- now "About" is connected to "about.html". so when "About" is clicked it takes to "about.html" -->
+                    <li>Contact</li>
+                </ul>
+
+        </nav>
+
+    <h4>5 - CSS UNITS</h4>
+
+        <h5>5(2) - percentage</h5>
+            <div class="css_units_parent_container">
+                <div class="css_units_container">
+                    <h2 class="css_units_name">RAGAVENDIRAN</h2>
+                </div>
+            </div>
+        
+        <h5>5(4) - VH</h5>
+            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg" alt="" class="css_units_img">
+
+        <h5>5(5) - VW</h5>
+            <div class="css_units_parent_container_vw">
+                <div class="css_units_container_vw">
+                    <h2 class="css_units_name_vw">RAGAVENDIRAN</h2>
+                </div>
+            </div>
+
+    <h4>6 - TO CHANGE SHAPE OF A IMAGE</h4>
+    <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg" alt="" class="to_change_shape_of_img">
+
+    
+</body>
+</html>

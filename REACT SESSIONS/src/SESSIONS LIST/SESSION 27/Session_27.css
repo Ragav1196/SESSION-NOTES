@@ -1,0 +1,116 @@
+.backGroundImg{ 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  .backGroundImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .movieContainer{
+    width: 340px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 2%;
+    overflow: hidden;
+    background-color: #e7b6b6cc;
+  }
+  
+  .posterPic{
+    height: 500px;
+    width: 340px;
+    object-fit: cover;
+  }
+  
+  .movieDetails{
+    margin: 0px 3px;
+  }
+  
+  .MovieSpecs{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+  }
+  
+  .MovieSpecs h3{
+    margin: 0px;  
+  }
+  
+  .MovieSpecs h3:nth-child(1){
+    width: 65%;
+    text-transform: uppercase;
+  }
+  
+  .movieRating{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .movieSummary{
+    height: 100px;
+    overflow-y: scroll; 
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  .ButtonForMovies{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+  
+  .ButtonForMovies button{  
+    background-color: #f21e1ecc;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.3s;
+  }
+  
+  .ButtonForMovies button:hover{
+    transform: scale(1.2);
+  }
+  
+  .font{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .wholeContent{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    padding: 20px;
+  }
+  
+  .LiteCounter{
+    width: 100vw;
+    height: 500px;
+    background-color: white;
+    padding: 50px;
+  }
+  
+  .likeButton button{
+    width: 100px;
+    height: 40px;
+  }
+  
+  .ButtonWithHookFn_2{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .ButtonWithHookFn_2 button{ 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 20px;
+  }

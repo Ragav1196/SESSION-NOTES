@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="Notes.css">
+</head>
+<body>
+    <h1>RAGAVENDIRAN</h1>
+        <!-- Parent caontainer of "H1" is the body as it is living inside the body -->
+        <!-- as "H1" being block element it will occupy the full width of the body -->
+        <!-- as if there is any element after a block element it will automatically prints in nect line only even though there is space -->
+        <!-- "NEXT POINT" - check under ol>li>briyani -->
+    <ol>
+        <!-- gives items list with number -->
+        <li>Briyani</li>
+            <!-- parent container for this is "ol" -->
+        <li>Gaming</li>
+        <li>Sports</li>
+        <li>Travel</li>
+        <li>Music</li>
+    </ol>
+    
+    <div>
+    <input type="text" placeholder="ENTER YOUR NAME" class="NAME">
+    <input type="password" placeholder="ENTER YOUR PASSWORD">
+    <input type="number" placeholder="ENTER YOUR MARKS">
+    </div>
+    <br>
+    
+    <!-- TO ADD IMAGE -->
+    <img 
+    src=https://c4.wallpaperflare.com/wallpaper/168/856/47/captain-america-chris-evans-captain-america-the-first-avenger-wallpaper-preview.jpg
+    alt="CA"
+    class="IMAGE">
+        <!-- <img> is used to add a image -->
+        <!-- <src> source of the image is given. -->
+        <!-- <alt> is used to display a text about the image when the image is not loaded or 
+            the image take time to load -->
+        <!-- <br> is used to print the next element in the next line. -->
+    
+    <div>
+        <input type="text" placeholder="ENTER YOUR EMAIL">
+    </div>
+
+    <p> hai <span class="PARA">HOW ARE YOU</span> what are you doing
+            <!-- "span" is a inline element which can be used to edit a block level element inbetween-->
+    </p>
+
+    <!-- ELEMENT TYPES:- -->
+        <!-- blocklevel element -->
+            <!-- they dont share space and occupy full width of the parent container -->
+            <!-- eg:- -->
+                <!-- H1 to H6 -->
+                <!-- ol and ul -->
+
+        <!-- inline element -->
+            <!-- they share the space as they dont occupy full width of the page -->
+            <!-- eg:- -->
+                <!-- img -->
+                <!-- span -->
+            <!-- height and width will not change exxcept for image  -->
+
+        <!-- inline block element -->
+            <!-- these are special element which shares the space and also accepts height and width change -->
+            <!-- eg:- -->
+                <!-- input -->
+
+    <!-- TO PUT TWO ELEMENT INSIDE A SAME CONTAINER:- -->
+        <!-- DIV: -->
+            <!-- "div" is used to make two different elements to contain in a same container -->
+            <p class="fname">RAGAVENDIRAN</p>
+            <p class="lname">PANCHATSHARAM</p>
+            
+            <div class="full_name">
+                <p>RAGAVENDIRAN</p>
+                <p>PANCHATSHARAM</p>
+            </div>
+
+            <p>uehiuwehfuh djivfhdslikhnsd fdihefhslif skdfhdsklfklsdf kshfdlaksfdlksafdlksad asdsadlkasdhnlaksd asdlksadnjaskdnjlakd asdsajdnklksndasd
+                sdkjsabnkldnbaskldnblsd asdknaskdnaskldnasd asdknaslkdansldkas daskdnlksdas
+                dsakbdksldblksdas
+                dasdnlskdnlakndlaksd
+                asdskndlkasnbdlksndalksdadadbasd asdjhasldiasidjiasd asdihasiodhiashdashd adaishdioashdaidjhniasdn saidjadpasd
+                asdjlisjdojdpasd asodjasodjaposd adaihdaoipsjd
+            </p>
+                <!-- now its parent container is "body" so it occupy full width of body -->
+
+            <div class = last_para>
+                <p>uehiuwehfuh djivfhdslikhnsd fdihefhslif skdfhdsklfklsdf kshfdlaksfdlksafdlksad asdsadlkasdhnlaksd asdlksadnjaskdnjlakd asdsajdnklksndasd
+                    sdkjsabnkldnbaskldnblsd asdknaskdnaskldnasd asdknaslkdansldkas daskdnlksdas
+                    dsakbdksldblksdas
+                    dasdnlskdnlakndlaksd
+                    asdskndlkasnbdlksndalksdadadbasd asdjhasldiasidjiasd asdihasiodhiashdashd adaishdioashdaidjhniasdn saidjadpasd
+                    asdjlisjdojdpasd asodjasodjaposd adaihdaoipsjd
+                </p>
+            </div>
+                <!-- if "div" width made "50%" of the body then the "div" will only occupy "50%" of its parent container which is body here -->
+                <!-- for "<p>" "div" is parent container, as the parent container is "50%", "p" will occupy the full space of "div" but as the 'div' is only "50%" of the screen the "P" will only occupy "50%" of the screen but it is actually occupying "100%" of the "div" -->
+            
+            <!-- OTHER TAGS LIKE <DIV>:- -->
+                <!-- <SECTion></SECTion> -->
+                <!-- <ARTICle></ARTICle> -->
+
+                    <!-- The hierchy that is followed is: -->
+                        <!-- <section>
+                            <article>
+                                <div>
+                                    <P>
+                                    </P>
+                                </div>
+                            </article>
+                        </section> -->
+                        <!-- these section, article, div are known as semantic elements -->
+                        <!-- they gave clarity to developer to easily read -->
+
+</body>
+</html>

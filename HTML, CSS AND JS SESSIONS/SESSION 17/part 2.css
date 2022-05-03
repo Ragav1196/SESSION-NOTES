@@ -1,0 +1,7 @@
+/* 2(6) - TO CREATE A NEW ELEMENT */
+    /* 2(6)(2) - TO ADD TO OTHER THAN BODY */
+        .new_element_div{
+            background-color: crimson;
+            height: 250px;
+            width: 250px;
+        }

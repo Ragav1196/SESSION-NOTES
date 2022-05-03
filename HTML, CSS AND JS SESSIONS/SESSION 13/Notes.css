@@ -1,0 +1,98 @@
+/* 1 - CREATING TABLE:- */
+    .table {
+        border-collapse: collapse;
+            /* "collapse" will merge the border which defaultly has a two line border is merged into one line */
+        margin-bottom: 100px;
+    }
+    
+    td, th{
+        /* we can also give propeties to multipe tags with single data provides. by seperating the tags with ","
+            we can assign multiple tags */
+        text-align: center;
+            /* to align data to center */
+        padding: 10px;
+            /* creates space between data and the cell */
+        border: 1px solid crimson;
+            /* creates border */
+    }
+
+/* 2 - ALIGNING ELEMENTS IN ORDER USING TABLES:- */
+    .table {
+        border-collapse: collapse;
+        margin-bottom: 100px;
+    }
+    
+    td, th {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid crimson;
+    }
+    
+    .table_button {
+        width: 100%;
+            /* to make the submit button to occupy full width */
+    } 
+
+/* 5 - TO STYLE USING THE VALUE IN ID:- */
+    #fname{
+        background-color: chocolate;
+    }
+
+/* 6 - SPECIFICITY - PRIORITY OF SELECTORS:- */
+    /* specificity is the priority given to selectors */
+    /* CSS - Cascading Style Sheet */
+    /* cascading means overwriting */
+        /* 6(1) - BETWEEN TWO TAGS:- */
+            /* #fname{
+                background-color: coral;
+            } */
+
+            #fname{
+                background-color: darkblue;
+            }
+                /* so in the above case which one is coming in the bottom that value will overwrite
+            the previous value */
+
+                /* so "darkblue" will be overwrite the "coral" in the above case */
+
+        /* 6(2) - BETWEEN CLASS AND TAG:- */
+            .first_name_class{
+                color:fuchsia;
+            }
+    
+            label{
+                color:green;
+            }
+    
+                /* in this case class has more priority than tag name so class value is applied */
+
+        /* 6(3) - BETWEEN ID AND CLASS:- */
+            .first_name_class{
+                color:fuchsia;
+            }
+
+            #first_name_id{
+                color: lime;
+            }
+
+                /* in this case id has more priority */
+
+        /* 6(5) - ! IMPORTANT */
+            /* only thing that cannot be overwritten by the inline also is:- */
+            /* !important */
+                /* this one is also not be used */
+                    label{
+                        color: black !important;
+                    }
+
+/* 7 - COLOR GRADIENT */
+    .gradient{
+        /* background: cadetblue; */
+        height: 500px;
+        background-image: linear-gradient(to right top, #052137, #31405c, #5c6282, #8a86a9, #baabd1);
+    }
+
+    body{
+        margin: 0px;
+            /* body will have default mariging so we are making it to "0" */
+    }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Notes.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TO TAKE A "SET TIMEOUT" NUMBER FROM A INPUT FIELD -->
+    <h1>TO TAKE A "SET TIMEOUT" NUMBER FROM A INPUT FIELD</h1>
+        <input type="text" name="" id="" class="time" value="4">
+
+    <!-- USING CALL BACK HELL FOR COUNTDOWN -->
+    <h1>USING CALL BACK HELL FOR COUNTDOWN</h1>
+        <div class="call_back_hell">
+            <p class="countdown">
+            </p>
+        </div>
+
+        <!-- TO BUILD A TEXTAREA AND TO SHOW HOW MANY INPUTS CHARACTERS ARE BEING TYPED IN LIVE -->
+        <h1>TO BUILD A TEXTAREA AND TO SHOW HOW MANY INPUTS CHARACTERS ARE BEING TYPED IN LIVE</h1>
+        <textarea class="tweet_1" oninput="count_letters_1()" name="" id="" cols="40" rows="10" maxlength="20"></textarea>
+            <!-- "oninput" is to call a function whenever character added to input field -->
+            <!-- it takes a function  -->
+            <!-- which can be defined in JS -->
+
+        <p class="update_num_1">0/20</p>
+            here the "0" has to updated everytime the input feild in "text area" gets filled
+
+        <!-- TO KEEP THE INPUT FIELD SAVED EVEN AFTER REFRESHING THE PAGE -->
+        <h1>TO KEEP THE INPUT FIELD SAVED EVEN AFTER REFRESHING THE PAGE</h1>
+        <textarea class="tweet_2" oninput="count_letters_2()" name="" id="" cols="40" rows="10" maxlength="20"></textarea>
+            <!-- "oninput" is to call a function whenever character added to input field -->
+            <!-- it takes a function  -->
+            <!-- which can be defined in JS -->
+
+        <p class="update_num_2">0/20</p>
+            here the "0" has to updated everytime the input feild in "text area" gets filled
+
+
+
+
+    <script src="Notes.js"></script>
+</body>
+</html>

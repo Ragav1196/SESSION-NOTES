@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+}
+
+.main_section{
+    height: 323px;
+    width: 550px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+.section{
+    border: 5px solid;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.heading{
+    height: 30px;
+    background-color: crimson;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+
+.heading_p{
+    padding-top: 3px;
+    font-size: 22px;
+    color: white;
+    margin: 0px;
+    font-weight: bolder;
+}
+
+
+.lname_p{
+    display: inline;
+    border-top: black solid;
+    margin-left: 7px;
+    padding-right: 192px;
+}
+
+.fname_p{
+    display: inline;
+    padding-right: 138px;
+    border-top: black solid;
+    margin-right: 20px;
+}
+
+.name_div, .address_deep_div{
+    margin-bottom: 20px;
+}
+
+.address_div{
+    padding-right: 314px;
+    border-top: black solid;
+    margin-right: 20px;
+    margin-bottom: 22px;
+    margin-right: 5px;
+}
+
+.adress_deep_p{
+    display: inline;
+    padding-right: 106px;
+    border-top: black solid;
+    margin-right: 0px;
+}
+
+#state_id, #zip_id{
+    margin-left: 50px;
+}
+
+
+.subcribe{
+    display: inline;
+}
+
+.more_information_div{
+    margin-bottom: 2px;
+}
+
+.more_information_p{
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+p, label{
+    font-weight: bold;
+}
